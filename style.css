@@ -1,0 +1,54 @@
+/* 
+Colors
+*/
+
+:root {
+  --background-color-1: #ebf4f5;
+  --backgound-color-2: #d9e5ee;
+  --main-color: #0f3154;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: var(--background-color-1);
+  padding: 1em;
+  position: relative;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.section-1 {
+  background-color: var(--backgound-color-2);
+  padding: 1em;
+}
+.section-2 {
+  background-color: var(--background-color-1);
+  padding: 1em;
+}
+
+.section-3 {
+  background-color: var(--backgound-color-2);
+  padding: 1em;
+}
+.section-4 {
+  background-color: var(--background-color-1);
+  padding: 1em;
+}
+
+.footer {
+  background-color: var(--main-color);
+  padding: 1em;
+  color: #ee4923;
+  font-weight: bold;
+}
