@@ -13,6 +13,11 @@ Colors
   padding: 0;
   box-sizing: border-box;
 }
+
+a:hover {
+  color: var(--main-color);
+}
+
 .header {
   background-color: var(--background-color-1);
   padding: 1em;
@@ -22,10 +27,23 @@ Colors
 .nav-bar {
   position: absolute;
   top: 5%;
-  right: 5%;
+  right: 10%;
+}
+
+.nav-bar ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-bar ul li {
+  padding: 0 5% 0 5%;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .section-1 {
@@ -51,4 +69,17 @@ Colors
   padding: 1em;
   color: #ee4923;
   font-weight: bold;
+}
+
+/* ~~~~~~~~~~~~~~~ Mobile Styling ~~~~~~~~~~~~~~~~ */
+
+@media (min-width: 300px) and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #de3163;
+  }
 }
